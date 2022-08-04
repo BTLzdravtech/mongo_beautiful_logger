@@ -47,8 +47,8 @@ class MongoBeautifulLogger
   # takes a log message and returns the message formatted
   def format_log(msg)
     msg = colorize_log(msg)
-    msg = remove_prefix(msg)
-    "#{msg}\n"
+    # msg = remove_prefix(msg)
+    "  #{msg}\n"
   end
 
   # colorize messages that are specified in ACTIONS constant
